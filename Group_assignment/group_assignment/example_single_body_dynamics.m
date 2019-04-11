@@ -7,7 +7,7 @@ body(1).q = [1;2;3];
 L2 = 01; % Length of link 2
 body(2).m = L2*10; 
 body(2).Ic = body(2).m * L2^2 / 12;
-body(2).q = [1;2;3];
+body(2).q = [4;5;6];
 
 L3 = 0.12; % Length of link 3
 body(3).m = L3*10; 
