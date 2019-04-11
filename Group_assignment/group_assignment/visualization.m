@@ -1,22 +1,28 @@
+%% Visualization of the plots
+%This code is used to visualize the three bodies in the threebodiesrun.m
+%file. First it loads the Q matrix saved from the previously mentioned
+%m-file and plots the movement of the three bodies.
+
 load Q.mat
 
-X1cp = Q(:,4);
-Y1cp = Q(:,5);
+X1cp = Q(:,4); %x-values of bar 1
+Y1cp = Q(:,5); %y-values of bar 1
 
-X2cp = Q(:,7);
-Y2cp = Q(:,8);
+X2cp = Q(:,7); %x-values of bar 2
+Y2cp = Q(:,8); %y-values of bar 2
 
-X3cp = Q(:,10);
-Y3cp = Q(:,11);
+X3cp = Q(:,10); %x-values of bar 3
+Y3cp = Q(:,11); %y-values of bar 3
 
 ep1 = [0,0]; %zero coordinates
 
-p1 = []; p2 = []; p3 = [];
+p1 = []; p2 = []; p3 = []; %define plots
 
+%% Start plot
 figure
 hold on
 axis([-0.05 0.105 -0.05 0.12])
-plot(0,0,'k*','LineWidth',2)
+plot(0,0,'k*','LineWidth',2) %Set the fixed points
 plot(0.1,0,'k*','LineWidth',2)
 
 for i = 1:length(X1cp)
