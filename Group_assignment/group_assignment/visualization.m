@@ -3,7 +3,7 @@
 %file. First it loads the Q matrix saved from the previously mentioned
 %m-file and plots the movement of the three bodies.
 
-load Q.mat
+%load Q.mat
 
 X1cp = Q(:,4); %x-values of bar 1
 Y1cp = Q(:,5); %y-values of bar 1
@@ -42,7 +42,7 @@ for i = 1:length(X1cp)
     %c2 = plot(X2cp(i),Y2cp(i),'r*','LineWidth',2);
     p3 = plot(X3, Y3,'b','LineWidth',3);
     %c3 = plot(X3cp(i),Y3cp(i),'y*','LineWidth',2);
-    pause(0.01);
+    pause(0.001);
 
 end
 hold off

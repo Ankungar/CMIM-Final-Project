@@ -108,7 +108,7 @@ C_fun = @(t, q) constraint(revolute, simple, driving, t, q);
 Cq_fun = @(t, q) constraint_dq(revolute, simple, driving, t, q);
 Ct_fun = @(t, q) constraint_dt(revolute, simple, driving, t, q);
 Ctt_fun = @(t, q, dq) constraint_dtt(revolute, simple, driving, t, dq, q);
-[T, Q, QP, QPP] = pos_vel_acc_NR(C_fun, Cq_fun, Ct_fun, Ctt_fun, 0.2, q_0, 0.001);
+[T, Q, QP, QPP] = pos_vel_acc_NR(C_fun, Cq_fun, Ct_fun, Ctt_fun, 0.5, q_0, 0.001);
 
 %% Verification plots
 figure
