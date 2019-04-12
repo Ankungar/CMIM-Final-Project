@@ -3,7 +3,7 @@
 %file. First it loads the Q matrix saved from the previously mentioned
 %m-file and plots the movement of the three bodies.
 
-%load Q.mat
+load Q.mat
 
 X1cp = Q(:,4); %x-values of bar 1
 Y1cp = Q(:,5); %y-values of bar 1

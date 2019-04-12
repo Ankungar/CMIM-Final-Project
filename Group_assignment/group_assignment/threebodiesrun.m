@@ -1,5 +1,5 @@
 %% CMIM Final Project
-%Mr. Russian
+%Vojtech Pospisil
 %Mattia Cipriani
 %Daphne van Dijken
 
