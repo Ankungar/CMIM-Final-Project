@@ -3,7 +3,8 @@
 %file. First it loads the Q matrix saved from the previously mentioned
 %m-file and plots the movement of the three bodies.
 
-load Q.mat
+%load Q.mat %For the three bodies
+load Q_slider.mat %For the slider crank
 
 X1cp = Q(:,4); %x-values of bar 1
 Y1cp = Q(:,5); %y-values of bar 1
@@ -21,9 +22,10 @@ p1 = []; p2 = []; p3 = []; %define plots
 %% Start plot
 figure
 hold on
-axis([-0.05 0.105 -0.05 0.12])
-plot(0,0,'k*','LineWidth',2) %Set the fixed points
-plot(0.1,0,'k*','LineWidth',2)
+%axis([-0.05 0.105 -0.05 0.12])
+axis([-1 0.1 -0.05 0.2])
+%plot(0,0,'k*','LineWidth',2) %Set the fixed points
+%plot(0.1,0,'k*','LineWidth',2)
 
 for i = 1:length(X1cp)
     [X1 Y1] = visual([X1cp(i), Y1cp(i)],ep1);

@@ -15,9 +15,11 @@ for r = revolute
     c_idx = c_idx + 2;
 end
 
-for s = simple
-    c_idx = c_idx + 1;
-    Cq(c_idx, body_idx(s.i)) = simple_joint_dq(s.k);
+if s_len ~= 0
+    for s = simple
+        c_idx = c_idx + 1;
+        Cq(c_idx, body_idx(s.i)) = simple_joint_dq(s.k);
+    end
 end
 
 for d = driving
